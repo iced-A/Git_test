@@ -24,7 +24,6 @@ class Test_kp:
         res =requests.post(url=url,headers=headers,json=data)
         token =res.json()["data"]["accessToken"]
         print(token)
-        yaml_util.YamlUtil().claer_extract_yaml()
         yaml_util.YamlUtil().write_extract_yaml({'token':token})
 
 
