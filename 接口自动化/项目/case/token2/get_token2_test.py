@@ -1,6 +1,6 @@
 #coding:utf-8
 import pytest
-import requests,os
+import requests,os,time
 from common import yaml_util
 
 class Test_ONE:
@@ -17,4 +17,4 @@ class Test_ONE:
             assert res.status_code==200 and 1==1 #防止报错停止运行 1==1
 
 if __name__ == '__main__':
-    pytest.main(["-vs"])
+    pytest.main()
