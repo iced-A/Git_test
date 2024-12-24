@@ -11,6 +11,7 @@ class Test_ONE:
         headers=caseinfo["request"]["header"]
         data=caseinfo["request"]["data"]
         res =requests.post(url=url,json=data,headers=headers)
+        print(url)
         if res.status_code==200 and res.json()["data"] is not None:
             token=res.json()["data"]["accessToken"]
             yaml_util.YamlUtil().write_extract_yaml({'authorization':'Bearer '+token})  #文件地址错了，改到别的用例的了
