@@ -6,10 +6,11 @@ from common import yaml_util
 def pytest_sessionfinish(session,exitstatus):
     os.system("allure generate ./temp -o ./report --clean")
 
+
 @pytest.fixture(scope="session",autouse=True)
 def test_p():
     print("开始前初始话对应yaml文件数据")
-    yaml_util.YamlUtil().claer_extract_yaml()
+    # yaml_util.YamlUtil().claer_extract_yaml(yaml_file)
     yield
     print("结束后")
 

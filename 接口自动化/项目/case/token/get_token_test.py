@@ -1,6 +1,7 @@
 #coding:utf-8
 import requests
 import pytest
+import os
 import time
 from common import yaml_util
 
@@ -11,6 +12,7 @@ class Test_kp:
     origin = 'https://nxkp-work.cloud.wozp.cn'
 
     def test_login(self):
+        yaml_file = os.path.join(os.path.dirname(__file__), 'get_token.yaml')
         url = Test_kp.api+'auth/user/v1/login'
         headers =  {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -24,11 +26,12 @@ class Test_kp:
         res =requests.post(url=url,headers=headers,json=data)
         token =res.json()["data"]["accessToken"]
         print(token)
-        yaml_util.YamlUtil().write_extract_yaml({'token':token})
+        yaml_util.YamlUtil().write_extract_yaml(yaml_file,{'token':token})
 
 
     def test_get_token(self):
-        token=yaml_util.YamlUtil().read_extract_yaml('token')
+        yaml_file = os.path.join(os.path.dirname(__file__), 'get_token.yaml')
+        token=yaml_util.YamlUtil().read_extract_yaml(yaml_file)["token"]
         print(token)
         url = Test_kp.kp_api+'users/update-access-token'
         headers = {

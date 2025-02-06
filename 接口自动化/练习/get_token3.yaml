@@ -14,7 +14,7 @@
     method: get
     url: https://api-pre.cloud.wozp.cn/auth/user/v1/login
   validate: None
-- name: 编辑过的name
+- name: 编辑过的name123
   request:
     data:
       account: 18258796752
@@ -30,4 +30,7 @@
     method: post
     url: https://reapif.wozp.cn/account/login
   validate: None
+- name: 新请求名称
+- name: 新请求名称
+- name: 新请求名称
 - name: 新请求名称
