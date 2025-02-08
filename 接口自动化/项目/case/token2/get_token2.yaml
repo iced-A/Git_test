@@ -14,7 +14,7 @@
     method: get
     url: https://api-pre.cloud.wozp.cn/auth/user/v1/login
   validate: None
-- authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJqdGkiOiJqd3RfaWQiLCJzdWIiOiIyMjEyMDgxSVo4Wlo3SyIsImlhdCI6MTczODgzMTU1NCwiYXVkIjoiV0VCIiwiZXhwIjoxNzM5NDM2NjU0LCJzaWQiOjUyLCJ0eXBlIjoiVVNFUiIsImdyb3VwVHlwZSI6Mn0.eKNxIzH0QjiNhA3FgalxcUxP9-rQDC1XpO-SCSL2KabLYDdq7SfeMJE0-WbVffCd
+- authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJqdGkiOiJqd3RfaWQiLCJzdWIiOiIyMjEyMDgxSVo4Wlo3SyIsImlhdCI6MTczOTAwNjQxOCwiYXVkIjoiV0VCIiwiZXhwIjoxNzM5NjExNTE4LCJzaWQiOjUyLCJ0eXBlIjoiVVNFUiIsImdyb3VwVHlwZSI6Mn0.lajdlOWWCOSwin4APYx4Y_nDd2ZeqzqeCfIk8CSuzPWgIF_AIG83fp38Hdk49HoD
   name: 编辑过的name123
   request:
     data:
@@ -31,5 +31,3 @@
     method: post
     url: https://reapif.wozp.cn/account/login
   validate: None
-- authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJqdGkiOiJqd3RfaWQiLCJzdWIiOiIyMjEyMDgxSVo4Wlo3SyIsImlhdCI6MTczODgzMTQwNywiYXVkIjoiV0VCIiwiZXhwIjoxNzM5NDM2NTA3LCJzaWQiOjUyLCJ0eXBlIjoiVVNFUiIsImdyb3VwVHlwZSI6Mn0.NhtwI8quX_L4TpAPwD1uJaPjx3QnWQu3Z284n18qSF_bVGpUexKxkQeMHsICenyU
-- authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJqdGkiOiJqd3RfaWQiLCJzdWIiOiIyMjEyMDgxSVo4Wlo3SyIsImlhdCI6MTczODgzMTQxNiwiYXVkIjoiV0VCIiwiZXhwIjoxNzM5NDM2NTE2LCJzaWQiOjUyLCJ0eXBlIjoiVVNFUiIsImdyb3VwVHlwZSI6Mn0.POWPBKfUDhIZ_yEs461Au3apYXAInLnMxiSJfc5ZqF-q1cJYsebR6vrrVOM89Aj3
